@@ -83,4 +83,8 @@ public class jpymath {
         }
         return minimum_common_multiple;
     }
+
+    public static double sin(double angle) {
+        return Math.sin(2 * Math.PI * angle / 360.0);
+    }
 }

@@ -44,8 +44,11 @@ def maximum_common_factor(a: int, b: int):
 def minimum_common_multiple(a: int, b: int):
     return _jpymath.minimum_common_multiple(a, b)
 
+def sin(angle: float):
+    return _jpymath.sin(angle)
+
 if __name__ == '__main__':
-    print(minimum_common_multiple(2,3))
+    print(sin(30))
 
 # def binary(num: int):
 #     return bin(num)[2:]
