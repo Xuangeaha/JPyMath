@@ -2,6 +2,7 @@
 基于Java的Python数学计算库 JPyMath
 
 Copyright (c) 2023 轩哥啊哈OvO
+
 """
 import jpype
 jpyJVM = jpype.startJVM(jpype.getDefaultJVMPath())
@@ -45,28 +46,6 @@ def minimum_common_multiple(a: int, b: int):
 
 if __name__ == '__main__':
     print(minimum_common_multiple(2,3))
-
-# def maximum_common_factor(a: float, b: float):
-#     if a > b:
-#         smaller = b
-#     else:
-#         smaller = a
-#     for num in range(1, smaller + 1):
-#         if (a % num == 0) and (b % num == 0):
-#             maximum_common_factor = num
-#     return maximum_common_factor
-
-# def minimum_common_multiple(a: float, b: float):
-#     if a > b:
-#         greater = a
-#     else:
-#         greater = a
-#     while (True):
-#         if (greater % a == 0) and (greater % b == 0):
-#             minimum_common_multiple = greater
-#             break
-#         greater += 1
-#     return minimum_common_multiple
 
 # def binary(num: int):
 #     return bin(num)[2:]
