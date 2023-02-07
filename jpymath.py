@@ -1,47 +1,47 @@
 """
-轩氏Python数学计算库 XMath
+基于Java的Python数学计算库 JPyMath
+
 Copyright (c) 2023 轩哥啊哈OvO
 """
-import time
 import jpype
 jpyJVM = jpype.startJVM(jpype.getDefaultJVMPath())
-_xmath = jpype.JClass('xmath')
+_jpymath = jpype.JClass('jpymath')
 
 def add(x: float, y: float):
-    return _xmath.add(x, y)
+    return _jpymath.add(x, y)
 
 def minus(x: float, y: float):
-    return _xmath.minus(x, y)
+    return _jpymath.minus(x, y)
 
 def multiply(x: float, y: float):
-    return _xmath.multiply(x, y)
+    return _jpymath.multiply(x, y)
 
 def divide(x: float, y: float):
-    return _xmath.divide(x, y)
+    return _jpymath.divide(x, y)
 
 def power(x: float, y: float):
-    return _xmath.power(x, y)
+    return _jpymath.power(x, y)
 
 def root(x: float, y: float):
-    return _xmath.root(x, y)
+    return _jpymath.root(x, y)
 
 def bigger(x: float, y: float):
-    return _xmath.bigger(x, y)
+    return _jpymath.bigger(x, y)
 
 def smaller(x: float, y: float):
-    return _xmath.smaller(x, y)
+    return _jpymath.smaller(x, y)
 
 def isEqual(x: float, y: float):
-    return _xmath.isEqual(x, y)
+    return _jpymath.isEqual(x, y)
 
 def factorial(num: int):
-    return _xmath.factorial(num)
+    return _jpymath.factorial(num)
 
 def maximum_common_factor(a: int, b: int):
-    return _xmath.maximum_common_factor(a, b)
+    return _jpymath.maximum_common_factor(a, b)
 
 def minimum_common_multiple(a: int, b: int):
-    return _xmath.minimum_common_multiple(a, b)
+    return _jpymath.minimum_common_multiple(a, b)
 
 if __name__ == '__main__':
     print(minimum_common_multiple(2,3))

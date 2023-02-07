@@ -1,4 +1,4 @@
-public class xmath {
+public class jpymath {
     private static final double Eplison = 0.000001;
 
     public static double add(double x, double y) {
