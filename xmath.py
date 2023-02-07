@@ -37,8 +37,14 @@ def isEqual(x: float, y: float):
 def factorial(num: int):
     return _xmath.factorial(num)
 
+def maximum_common_factor(a: int, b: int):
+    return _xmath.maximum_common_factor(a, b)
+
+def minimum_common_multiple(a: int, b: int):
+    return _xmath.minimum_common_multiple(a, b)
+
 if __name__ == '__main__':
-    print(isEqual(3,3))
+    print(minimum_common_multiple(2,3))
 
 # def maximum_common_factor(a: float, b: float):
 #     if a > b:

@@ -49,7 +49,7 @@ public class xmath {
         }
     }
 
-    
+
     public static long factorial(int num) {
         long result;
         if (num > 1) {
@@ -58,5 +58,29 @@ public class xmath {
             result = 1;
         }
         return result;
+    }
+
+    public static int maximum_common_factor(int a, int b) {
+        int smaller = (int) smaller(a, b);
+        int maximum_common_factor = 1;
+        for (int i = 1; i < smaller + 1; i ++) {
+            if (a % i == 0 && b % i == 0) {
+                maximum_common_factor = i;
+            }
+        }
+        return maximum_common_factor;
+    }
+
+    public static int minimum_common_multiple(int a, int b) {
+        int bigger = (int) bigger(a, b);
+        int minimum_common_multiple = 1;
+        while (true) {
+            if (bigger % a == 0 && bigger % b == 0) {
+                minimum_common_multiple = bigger;
+                break;
+            }
+            bigger ++;
+        }
+        return minimum_common_multiple;
     }
 }
