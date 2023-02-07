@@ -1,4 +1,6 @@
 public class xmath {
+    private static final double Eplison = 0.000001;
+
     public static double add(double x, double y) {
         return x + y;
     }
@@ -23,6 +25,31 @@ public class xmath {
         return Math.pow(x, 1 / y);
     }
 
+    public static double bigger(double x, double y) {
+        if (x > y) {
+            return x;
+        } else {
+            return y;
+        }
+    }
+
+    public static double smaller(double x, double y) {
+        if (x < y) {
+            return x;
+        } else {
+            return y;
+        }
+    }
+
+    public static boolean isEqual(double x, double y) {
+        if (x - y < Eplison && y - x < Eplison) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    
     public static long factorial(int num) {
         long result;
         if (num > 1) {

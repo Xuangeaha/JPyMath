@@ -25,24 +25,20 @@ def power(x: float, y: float):
 def root(x: float, y: float):
     return _xmath.root(x, y)
 
+def bigger(x: float, y: float):
+    return _xmath.bigger(x, y)
+
+def smaller(x: float, y: float):
+    return _xmath.smaller(x, y)
+
+def isEqual(x: float, y: float):
+    return _xmath.isEqual(x, y)
+
 def factorial(num: int):
     return _xmath.factorial(num)
 
 if __name__ == '__main__':
-    i = -1
-    while True:
-        i += 1
-        a = factorial(i)
-        b = a + 1
-        print(a,b,type(a),type(b))
-        time.sleep(0.5)
-
-# def factorial(num: float):
-#     if (num > 1):
-#         result = num * factorial(num - 1)
-#     else:
-#         result = 1
-#     return result
+    print(isEqual(3,3))
 
 # def maximum_common_factor(a: float, b: float):
 #     if a > b:
