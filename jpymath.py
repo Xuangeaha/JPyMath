@@ -47,9 +47,6 @@ def minimum_common_multiple(a: int, b: int):
 def sin(angle: float):
     return _jpymath.sin(angle)
 
-if __name__ == '__main__':
-    print(sin(30))
-
 # def binary(num: int):
 #     return bin(num)[2:]
 
